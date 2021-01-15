@@ -1,0 +1,62 @@
+body
+{
+    background: #EFF0F4;
+}
+.transaction__container
+{
+    padding: 10px 200px;
+}
+.review__btn
+{
+    color: #9a67ac;
+    transition: 0.3s;
+}
+.review__btn:hover
+{
+    color: #FDB81F;
+}
+.title__text
+{
+    font-size: 42px;
+}
+@media (max-width: 990px)
+{
+        .transaction__container
+        {
+            padding: 10px 150px;
+        }
+}
+@media (max-width: 900px)
+{
+        .transaction__container
+        {
+            padding: 10px 100px;
+        }
+}
+@media (max-width: 800px)
+{
+        .transaction__container
+        {
+            padding: 10px 20px;
+        }
+        .title__text
+        {
+            font-size: 30px;
+        }
+}
+/* Mobile */
+@media (max-width: 700px)
+{
+        #desktop__vertical
+        {
+            display: none;
+        }
+}
+/* Desktop */
+@media (min-width: 700px)
+{
+        #mobile__vertical
+        {
+            display: none;
+        }
+}

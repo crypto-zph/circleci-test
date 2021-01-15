@@ -1,0 +1,86 @@
+.promo__container{
+    padding: 30px 80px;
+}
+
+
+.my__categories__section{
+    height: 100%;
+}
+
+.categories__item:hover{
+    color:#f36d00;
+}
+
+.categories__item{
+    text-decoration: none;
+    color: #757575;
+    font-size: 13px;
+    line-height: 27px;
+}
+.carousel__container
+{
+    height: 40%;
+    width: 100%;
+}
+@media (max-width: 1212px)
+{
+    .carousel__container
+{
+    height: 40%;
+    width: 100%;
+}
+
+}
+@media (max-width: 1068px)
+{
+    .carousel__container
+{
+    height: 30%;
+    width: 100%;
+}
+}
+@media (max-width: 1023px)
+{
+    .promo__container{
+        padding: 30px 10px;
+    }
+    .carousel__container
+    {
+        height: 300px !important;
+    }
+}
+@media (max-width: 822px)
+{
+    .carousel__container
+    {
+        height: 250px !important;
+    }
+}
+@media (max-width: 687px)
+{
+    .carousel__container
+    {
+        height: 200px !important;
+    }
+}
+@media (max-width: 535px)
+{
+    .carousel__container
+    {
+        height: 150px !important;
+    }
+}
+@media (max-width: 406px)
+{
+    .carousel__container
+    {
+        height: 130px !important;
+    }
+}
+@media (max-width: 368px)
+{
+    .carousel__container
+    {
+        height: 100px !important;
+    }
+}

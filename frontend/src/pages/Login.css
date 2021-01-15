@@ -1,0 +1,46 @@
+.bg__left
+{
+/*    <img src="login_img/layer_1.png" style="width: 100%" />*/
+    background: url("../../public/login_img/layer_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 1208px) {
+	.bg__left {
+		background-size: 100% 100vh;
+	}
+}
+@media (max-width: 1023px) {
+	.bg__left {
+		display: none
+	}
+	.padding__mobile {
+		padding: 0px 300px;
+	}
+}
+@media (max-width: 946px) {
+	.padding__mobile {
+		padding: 0px 200px;
+	}
+}
+@media (max-width: 795px) {
+	.padding__mobile {
+		padding: 0px 100px;
+	}
+}
+@media (max-width: 585px) {
+	.padding__mobile {
+		padding: 0px 60px;
+	}
+}
+@media (max-width: 476px) {
+	.padding__mobile {
+		padding: 0px 20px;
+	}
+}
+@media (max-width: 355px) {
+	.padding__mobile {
+		padding: 0px 0px;
+	}
+}

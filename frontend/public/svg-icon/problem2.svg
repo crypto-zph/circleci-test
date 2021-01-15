@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="154px" height="117px" viewBox="0 0 154 117" enable-background="new 0 0 154 117" xml:space="preserve">
+<ellipse fill="#651E7F" cx="65.59" cy="56.337" rx="44.917" ry="44.663"/>
+<path fill="#F3F3F3" d="M77.397,36.929h35.785C90.805,44.53,84.448,53.642,75.879,72.063H40.094
+	C47.78,53.727,52.878,43.975,77.397,36.929z"/>
+<g>
+	<path fill="#FFFFFF" d="M103.422,31.29H67.637C43.118,38.336,38.02,48.087,30.334,66.425h2.827l5.307-9.977l-0.849,9.977h0.216
+		l5.622-5.205l3.019,5.205h0.293l10.676-13.772c-0.868,3.795-2.451,11.755-1.844,13.23c0.075,0.182,0.143,0.362,0.204,0.542h10.314
+		C74.688,48.003,81.045,38.891,103.422,31.29z"/>
+</g>
+<path fill="#B0C1D6" d="M94.965,32.808H66.878v-0.434h28.086V32.808z"/>
+<path fill="#B0C1D6" d="M91.061,34.435H62.975v-0.434h28.086V34.435z"/>
+<path fill="#B0C1D6" d="M85.964,36.17H57.878v-0.434h28.086V36.17z"/>
+<path fill="#B0C1D6" d="M82.818,37.471H54.733v-0.434h28.085V37.471z"/>
+<path fill="#B0C1D6" d="M79.783,39.206H51.697v-0.434h28.086V39.206z"/>
+<path fill="#B0C1D6" d="M77.506,41.483H49.42V41.05h28.086V41.483z"/>
+<path fill="#B0C1D6" d="M74.686,43.978H46.6v-0.434h28.086V43.978z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="25.2295" y1="103.5459" x2="18.593" y2="99.1418" gradientTransform="matrix(1 0 0 -1 0 118)">
+	<stop  offset="0" style="stop-color:#FC3C6A"/>
+	<stop  offset="1" style="stop-color:#D21844"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M15.074,0.373c0.311-0.206,0.729-0.121,0.936,0.189l18.438,27.785
+	c0.206,0.311,0.122,0.729-0.189,0.936l-5.512,3.658c-0.311,0.206-0.729,0.121-0.936-0.189L12.732,10.029
+	c-2.062-3.106-1.214-7.295,1.892-9.357L15.074,0.373z"/>
+<path fill="#B0C1D6" d="M56.22,63.964L33.527,29.768L29.59,32.38C34.57,43.205,49.418,57.946,56.22,63.964z"/>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="30.337" y="31.681" width="25.79" height="30.642">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="30.337" y="31.681" width="25.79" height="30.642" id="mask0">
+	<path fill="#B0C1D6" filter="url(#Adobe_OpacityMaskFilter)" d="M56.22,63.964L33.527,29.768L29.59,32.38
+		C34.57,43.205,49.418,57.946,56.22,63.964z"/>
+</mask>
+<g mask="url(#mask0)">
+	<path fill="#F2F2F2" d="M42.497,48.818c4.844,5.442,9.993,10.222,13.63,13.191l-0.256,0.313
+		c-3.653-2.983-8.817-7.777-13.676-13.235c-4.856-5.456-9.42-11.588-11.857-17.247l0.372-0.16
+		C33.121,37.28,37.651,43.374,42.497,48.818z"/>
+</g>
+</svg>

@@ -1,0 +1,31 @@
+.search__icon{
+    background: linear-gradient(-45deg, #e39e05, #e39e05, #e39e05 ,#764e85,#764e85, #764e85);
+    background-size: 400% 400%;
+      animation: gradient 85s ease infinite;
+  }
+  
+  .autocomplete {
+      position: relative;
+  }
+  
+  .autocomplete-results {
+      padding: 0;
+      margin: 0;
+      border: none;
+      background-color: transparent;
+      height: 120px;
+      overflow: auto;
+  }
+  
+  .autocomplete-result {
+      list-style: none;
+      text-align: left;
+      padding: 4px 2px;
+      cursor: pointer;
+  }
+  
+  .autocomplete-result.is-active,
+  .autocomplete-result:hover {
+      background-color: #764e85;
+      color: white;
+  }

@@ -1,0 +1,26 @@
+*** Steps Backend ***
+
+0. Model Setup(if new)
+1. Controllers(req, res)
+2. Classes(Heavy Functions)
+3. Model(Query)
+4. Server(Post)
+
+
+
+*** Steps Frontend***
+
+1. frontend/src/references/url.js
+   - copy address from backend/server.js
+
+2. frontend/src/references/nav.js
+   - create navigation
+
+3. frontend/src/router/route.js
+   - create address for frontend
+
+4. frontend/src/pages/documentation/*YourApp.vue
+   - creating module as a whole
+
+5. frontend/src/components/*UQYourApp.vue
+   - creating main module

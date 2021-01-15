@@ -1,0 +1,33 @@
+
+
+.sell__container {
+    padding: 30px 200px;
+  }
+
+  .sell__title {
+    margin-top: 0
+}
+
+.title__bg {
+    color:#C37C33;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .stepper__container{
+    padding: 10px 200px;
+  }
+  @media (max-width: 1000px)
+  {
+    .sell__container {
+      padding: 30px 10px;
+    }
+  .stepper__container{
+    padding: 10px 10px;
+  }
+  div.q-stepper__step-inner
+  {
+    padding: 0 40px !important;
+  }
+  }

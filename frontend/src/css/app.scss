@@ -1,0 +1,48 @@
+// app global css in SCSS form
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+.font-rubik-title
+{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+}
+.font-rubik-labels
+{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+     ::-webkit-scrollbar {
+    width: 14px;
+}
+::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    border: 4px solid transparent;
+    border-radius: 7px;
+    box-shadow: inset 0 0 0 3px #e0e0e0;
+}
+::-webkit-scrollbar-thumb:active {
+    box-shadow: inset 0 0 0 3px #d1d1d1;
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+* {
+    scroll-behavior: smooth;
+}
+/* style of inputs */
+    .input__style {
+        border: 1px solid #c7c7c7;
+        padding: 0 10px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .input__style:focus-within {
+        border: 1px solid #9A67AC;
+    }
+/*end*/

@@ -1,0 +1,241 @@
+body 
+{
+    background: #f6f6f6 !important;
+}
+.image__hover1
+{
+    transition: transform .2s ease-in-out;
+}
+.image__hover1:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.image__hover2
+{
+    transition: transform .2s ease-in-out;
+}
+.image__hover2:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.image__hover3
+{
+    transition: transform .2s ease-in-out;
+}
+.image__hover3:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.image__hover4
+{
+    transition: transform .2s ease-in-out;
+}
+.image__hover4:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.image__hover5
+{
+    transition: transform .2s ease-in-out;
+}
+.image__hover5:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.image__hover6
+{
+    transition: transform .2s ease-in-out;
+}
+.image__hover6:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.image__hover7
+{
+    transition: transform .2s ease-in-out;
+}
+.image__hover7:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.image__hover8
+{
+    transition: transform .2s ease-in-out;
+}
+.image__hover8:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.image__hover9
+{
+   transition: 0.5s;
+}
+.image__hover9:hover
+{
+    box-shadow: 0px 0px 4px 3px grey;
+}
+.image__hover10
+{
+    transition: 0.5s;
+}
+.image__hover10:hover
+{
+    box-shadow: 0px 0px 4px 3px grey;
+}
+.image__hover11
+{
+    transition: 0.5s;
+}
+.image__hover11:hover
+{
+    box-shadow: 0px 0px 4px 3px grey;
+}
+.image__hover12
+{
+    transition: 0.5s;
+}
+.image__hover12:hover
+{
+    box-shadow: 0px 0px 4px 3px grey;
+}
+.bg__cover 
+{
+    width: 100%;
+    height: 30vh;
+}
+.display__picture 
+{
+    width: 160px;
+    height: 160px;
+    left: 100px;
+    top: 240px;
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid #f6f6f6 !important;
+    background: #f6f6f6;
+}
+.display__picture_boy
+{
+    border-radius: 10%;
+}
+.display__picture_bg
+{
+    border-radius: 10px;
+}
+.name__user
+{
+    /* left: 270px;
+    top: 32%;
+    position: absolute; */
+}
+.name__user2
+{
+    color: white;
+}
+.user__text
+{
+    color: black;
+}
+.user__name__container
+{
+    margin: 0 20px 0 30%;
+}
+.tabs__padding-desktop {
+    padding: 0 50px 0 50px;
+    border-radius: 0 0 5px 5px
+  }
+.tabs__profile
+{
+    margin-top: 130px;
+    padding: 0 100px;
+}
+@media (max-width: 1753px) {
+            .user__name__container
+        {
+            margin: 0 20px 0 40%;
+        }
+}
+@media (max-width: 1353px) {
+    .user__name__container
+    {
+        margin: 0 20px 0 50%;
+    }
+}
+@media (max-width: 1284px) {
+    .user__name__container
+    {
+        margin: 0 20px 0 45%;
+    }
+}
+@media (max-width: 1187px) {
+    .user__name__container
+    {
+        margin: 0 20px 0 20%;
+    }
+        .display__picture 
+    {
+        top: 110px;
+        left: 13%;
+    }
+}
+@media (max-width: 1068px) {
+    .tabs__padding-desktop {
+        padding: 0 10px 0 10px;
+      }
+}
+@media (max-width: 700px)
+{
+                .tabs__profile
+            {
+                margin-top: 10px;
+                padding: 0 10px;
+            }
+            .display__picture 
+            {
+                left: 37%;
+                top: 23%;
+            }
+}
+@media (max-width: 600px)
+{
+    .display__picture 
+            {
+                left: 35%;
+            }
+}
+@media (max-width:500px)
+{
+    .display__picture 
+            {
+                left: 30%;
+            }
+}
+@media (min-width: 768px)
+{
+    .name__user2
+    {
+        display: none
+    }
+}
+@media (max-width: 768px) {
+            .name__user
+        {
+            display: none;
+        }
+}

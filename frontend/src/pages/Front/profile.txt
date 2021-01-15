@@ -1,0 +1,279 @@
+      <div class="mobile__header">
+        <div class="row header__container">
+          <div>
+          <profile-avatar-mobile class="avatar__mobile"></profile-avatar-mobile>
+          </div>
+          <div class="flex flex-center q-ml-md">
+          <h4 class="font-rubik-title name__user2"><span class="name__user_text">{{user_name}}</span> <br> <q-rating
+                    v-model="ratingModel"
+                    class="q-mb-md rating__user"
+                    size="0.6em"
+                    color="orange"
+                    readonly
+                /><br></h4>
+          </div>
+        </div>
+      </div>
+        <q-img v-if="image_bg1" class="bg__cover" src="bg-imgs/bg1.jpg" style="border-bottom: 3px solid #FDB81F; height: 250px"> 
+         <div class="absolute-full text-subtitle2 flex flex-center change__bg_imgs">
+            <q-btn class="q-px-lg q-py-xs" flat @click="show_images_bg = true">Edit cover photo</q-btn>
+          </div>
+          </q-img>
+             <q-img v-if="image_bg2" class="bg__cover" src="bg-imgs/bg2.jpg" style="border-bottom: 3px solid #FDB81F; height: 250px">
+         <div class="absolute-full text-subtitle2 flex flex-center change__bg_imgs">
+            <q-btn class="q-px-lg q-py-xs" flat @click="show_images_bg = true">Edit cover photo</q-btn>
+          </div>
+          </q-img>
+             <q-img v-if="image_bg3" class="bg__cover" src="bg-imgs/bg3.jpg" style="border-bottom: 3px solid #FDB81F; height: 250px">
+         <div class="absolute-full text-subtitle2 flex flex-center change__bg_imgs">
+            <q-btn class="q-px-lg q-py-xs" flat @click="show_images_bg = true">Edit cover photo</q-btn>
+          </div>
+          </q-img>
+             <q-img v-if="image_bg4" class="bg__cover" src="bg-imgs/bg4.jpg" style="border-bottom: 3px solid #FDB81F; height: 250px">
+         <div class="absolute-full text-subtitle2 flex flex-center change__bg_imgs">
+            <q-btn class="q-px-lg q-py-xs" flat @click="show_images_bg = true">Edit cover photo</q-btn>
+          </div>
+          </q-img>
+             <q-dialog v-model="show_images_bg" seamless>
+              <q-card style="width: 100%;">
+                  <q-card-section>
+                    <div class="row">
+                    <div class="font-rubik-title q-pb-sm col-6">
+                    <h5><b>Pick an image</b></h5>
+                    </div>
+                    <div class="col-6  q-pb-sm" align="right">
+                      <q-btn flat icon="fas fa-times" round size="13px" v-close-popup></q-btn>
+                      </div>
+                      </div>
+                    <div class="row q-col-gutter-md">
+                      <div class="col-12">
+                          <q-img @click="image_bg_1" class="display__picture_bg image__hover9" src="bg-imgs/bg1.jpg"></q-img>
+                    </div>
+                         <div class="col-12">
+                             <q-img @click="image_bg_2" class="display__picture_bg image__hover10" src="bg-imgs/bg2.jpg"></q-img>
+                         </div>
+                          <div class="col-12">
+                               <q-img @click="image_bg_3" class="display__picture_bg image__hover11" src="bg-imgs/bg3.jpg"></q-img>
+                           </div>
+                              <div class="col-12">
+                                 <q-img @click="image_bg_4" class="display__picture_bg image__hover12" src="bg-imgs/bg4.jpg"></q-img>
+                           </div>
+                        </div>
+                    </q-card-section>
+                </q-card>
+              </q-dialog>
+
+
+      <profile-avatar class="avatar__desktop"></profile-avatar>
+        
+                <div class="row">
+                  <div class="col">
+                    <div class="user__name__container">
+                     <h4 class="font-rubik-title name__user"><span class="user__text">{{user_name}}</span> <br> <q-rating
+                    v-model="ratingModel"
+                    class="q-mb-md rating__user"
+                    size="0.6em"
+                    color="orange"
+                    readonly
+                /><br></h4>
+                    </div>
+                  </div>
+                  <div class="col q-pr-xl">
+                  <q-tabs dense v-model="profile_tab" align="right" class="tabs__width  panels__desktop font-rubik-title" active-bg-color="accent" animated indicator-color="transparent">
+                    <q-tab class="bg-secondary text-white tabs__padding-desktop profile__width" name="post" >Posted</q-tab>
+                    <q-tab class="bg-secondary text-white tabs__padding-desktop profile__width" name="reviews" >Reviews</q-tab>
+                    <q-tab class="bg-secondary text-white tabs__padding-desktop profile__width" name="trades" >Trades</q-tab>
+                  </q-tabs>
+                  </div>
+                </div>
+
+                <!-- desktop tabs -->
+                <div class="row panels__desktop">
+                  <div class="col-5 q-px-xl q-mt-xl">
+                    <div class="text-h5 font-rubik-title q-ml-md q-mb-sm">About</div>
+                    <div class="bg-white q-pa-md font-rubik-labels" style="border-radius: 20px; box-shadow: 0px 5px 3px 1px #bababa">
+                      My name is Angelo. I am a junior developer. Everyone agree that I am a good at design. I am going to enter the university because my goal is to study more in the future and to become a respected professional in one of the fields.
+                    </div>
+                  </div>
+                  <div class="col-7 q-pr-xl" style="margin-top: 88px">
+                <q-tab-panels v-model="profile_tab" animated style="border-radius: 20px;box-shadow: 0px 5px 3px 1px #bababa">
+                <q-tab-panel name="post">
+                  <div class="text-h6 font-rubik-labels"><b>Posted</b></div>
+                  <q-separator/>
+                  <span>
+                    <div class="q-pa-sm">
+                      <div class="row q-col-gutter-md">
+                        <div class="col-3">
+                       <q-card class="my-card">
+                        <img src="products/product_07.jpg">
+                        <q-card-section class="q-px-sm">
+                          <div style="font-size: 13px;" class="item__title">SYCARA V SKAT YAAKUN</div>
+                          <div class="text-subtitle2 text-accent q-mt-xs">$1,212,200</div>
+                        </q-card-section>
+                      </q-card>
+                        </div>
+
+                         <div class="col-3">
+                       <q-card class="my-card">
+                        <img src="products/product_06.jpg">
+                        <q-card-section class="q-px-sm">
+                          <div style="font-size: 13px;" class="item__title">Audi R8 v8 model 2018 330HP</div>
+                          <div class="text-subtitle2 text-accent q-mt-xs">$150,000</div>
+                        </q-card-section>
+                      </q-card>
+                        </div>
+
+                         <div class="col-3">
+                       <q-card class="my-card">
+                        <img src="products/product_01.jpg">
+                        <q-card-section class="q-px-sm">
+                          <div style="font-size: 13px;" class="item__title">2 Stories House and lot</div>
+                          <div class="text-subtitle2 text-accent q-mt-xs">$330,000</div>
+                        </q-card-section>
+                      </q-card>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </span>
+                </q-tab-panel>
+                
+
+                <q-tab-panel name="reviews">
+                  <div class="text-h6 font-rubik-title">Reviews</div>
+                  <q-separator/>
+                  <div class="q-pt-sm">
+                   <q-item clickable v-ripple>
+                      <q-item-section avatar>
+                        <q-avatar color="primary" text-color="white">
+                        <img src="profile-imgs/boy-dp1.jpg">
+                        </q-avatar>
+                      </q-item-section>
+                      <q-item-section>
+                        <q-item-label>John Raymund Bernal</q-item-label>
+                        <q-item-label caption lines="1"> <q-rating
+                        v-model="ratingModel"
+                        size="1.5em"
+                        color="orange"
+                        readonly
+                    /></q-item-label>
+                      </q-item-section>
+                      <q-item-section side>
+                        <q-icon name="chat_bubble" color="green" />
+                      </q-item-section>
+                    </q-item>
+                  </div>
+
+                     <div class="q-pt-sm">
+                   <q-item clickable v-ripple>
+                      <q-item-section avatar>
+                        <q-avatar color="primary" text-color="white">
+                        <img src="profile-imgs/girl-dp1.jpg">
+                        </q-avatar>
+                      </q-item-section>
+                      <q-item-section>
+                        <q-item-label>Andrea destajo</q-item-label>
+                        <q-item-label caption lines="1"> <q-rating
+                        v-model="ratingModel"
+                        size="1.5em"
+                        color="orange"
+                        readonly
+                    /></q-item-label>
+                      </q-item-section>
+                      <q-item-section side>
+                        <q-icon name="chat_bubble" color="green" />
+                      </q-item-section>
+                    </q-item>
+                  </div>
+
+                     <div class="q-pt-sm">
+                   <q-item clickable v-ripple>
+                      <q-item-section avatar>
+                        <q-avatar color="primary" text-color="white">
+                        <img src="profile-imgs/boy-dp4.jpg">
+                        </q-avatar>
+                      </q-item-section>
+                      <q-item-section>
+                        <q-item-label>Vermont</q-item-label>
+                        <q-item-label caption lines="1"> <q-rating
+                        v-model="ratingModel"
+                        size="1.5em"
+                        color="orange"
+                        readonly
+                    /></q-item-label>
+                      </q-item-section>
+                      <q-item-section side>
+                        <q-icon name="chat_bubble" color="green" />
+                      </q-item-section>
+                    </q-item>
+                  </div>
+
+                     <div class="q-pt-sm">
+                   <q-item clickable v-ripple>
+                      <q-item-section avatar>
+                        <q-avatar color="primary" text-color="white">
+                        <img src="profile-imgs/boy-dp3.jpg">
+                        </q-avatar>
+                      </q-item-section>
+                      <q-item-section>
+                        <q-item-label>Paul Musa</q-item-label>
+                        <q-item-label caption lines="1"> <q-rating
+                        v-model="ratingModel"
+                        size="1.5em"
+                        color="orange"
+                        readonly
+                    /></q-item-label>
+                      </q-item-section>
+                      <q-item-section side>
+                        <q-icon name="chat_bubble" color="green" />
+                      </q-item-section>
+                    </q-item>
+                  </div>
+                </q-tab-panel>
+
+                <q-tab-panel name="trades">
+                  <div class="text-h6 font-rubik-title">Trades</div>
+                  <q-separator/>
+                  <span class="font-rubik-labels">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </span>
+                </q-tab-panel>
+              </q-tab-panels>
+              <br><br>
+                  </div>
+             </div>
+
+              <!-- Mobile tabs -->
+               <div class="row panels__mobile">
+                   <div class="col-12 q-mt-xl" style="padding: 0 48px 0 40px">
+                    <div class="text-h5 font-rubik-title q-ml-md q-mb-sm">About</div>
+                    <div class="bg-white q-pa-md" style="border-radius: 20px;box-shadow: 0px 5px 3px 1px #bababa">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+                  <div class="col-12" style="padding: 0 48px 0 40px">
+                     <div>
+                  <q-tabs dense v-model="profile_tab" align="right" class="tabs__width2 font-rubik-title" active-bg-color="accent" animated indicator-color="transparent">
+                    <q-tab class="bg-secondary text-white tabs__padding profile__width" name="post" >Posted</q-tab>
+                    <q-tab class="bg-secondary text-white tabs__padding profile__width" name="reviews" >Reviews</q-tab>
+                    <q-tab class="bg-secondary text-white tabs__padding profile__width" name="trades" >Trades</q-tab>
+                  </q-tabs>
+                </div>
+                <q-tab-panels v-model="profile_tab" animated style="border-radius: 0 0 20px 20px; box-shadow: 0px 5px 3px 1px #bababa">
+                <q-tab-panel name="post">
+                  <div class="text-h6 font-rubik-title">Posted</div>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </q-tab-panel>
+
+                <q-tab-panel name="reviews">
+                  <div class="text-h6 font-rubik-title">Reviews</div>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </q-tab-panel>
+
+                <q-tab-panel name="trades">
+                  <div class="text-h6 font-rubik-title">Trades</div>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </q-tab-panel>
+              </q-tab-panels>
+                  </div>
+                </div>
