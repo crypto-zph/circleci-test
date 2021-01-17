@@ -134,7 +134,7 @@ io.on('connection', (socket) =>
 
 
 
-app.use(cors({credentials: true, origin: 'http://localhost:8080'}));
+app.use(cors({credentials: true, origin: process.env.ADDRESS}));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/public', express.static(path.join(__dirname, 'public/product-imgs/')));

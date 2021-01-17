@@ -29,7 +29,7 @@
 	export default {
 		data() {
 			return {
-				isConfirmation: true,
+				isConfirmation: false,
 				cancel: true,
 			}
 		},}

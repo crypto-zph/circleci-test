@@ -27,7 +27,7 @@
               swipeable
               class="carousel__mobileSize"
             >
-              <q-carousel-slide v-for="(thumbs, i) in thumbnail" :name="i" :img-src="thumbs" />
+              <q-carousel-slide v-for="(thumbs, i) in thumbnail" :key="i" :name="i" :img-src="thumbs" />
             </q-carousel>
         </div>
     </div>

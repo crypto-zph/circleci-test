@@ -34,20 +34,20 @@ const schema = new Schema(
 
 module.exports = class MDB_REFERENCES extends MODEL
 {
-    #main_doc = {
-        _id: '5fdb15f944bb191fd8fb81f5'
-    };
 
     constructor ()
     {
         super('references', schema);
+        this.main_doc = {
+            _id: '5fdb15f944bb191fd8fb81f5'
+        };
     }
 
     // total users
     async incrementTotal(inc = 1)
     {
         const res           = this.collection.findOneAndUpdate(
-            this.#main_doc._id, 
+            this.main_doc._id, 
             {
                 $inc: {
                     'users.total': inc
@@ -68,7 +68,7 @@ module.exports = class MDB_REFERENCES extends MODEL
     async incrementKycNotSubmitted(inc = 1)
     {
         const res           = this.collection.findOneAndUpdate(
-            this.#main_doc._id, 
+            this.main_doc._id, 
             {
                 $inc: {
                     'users.not_kyc_submitted': inc
@@ -87,7 +87,7 @@ module.exports = class MDB_REFERENCES extends MODEL
     async decrementKycNotSubmitted(dec = -1)
     {
         const res           = this.collection.findOneAndUpdate(
-            this.#main_doc._id, 
+            this.main_doc._id, 
             {
                 $inc: {
                     'users.not_kyc_submitted': dec
@@ -108,7 +108,7 @@ module.exports = class MDB_REFERENCES extends MODEL
     async incrementKycSubmitted(inc = 1)
     {
         const res           = this.collection.findOneAndUpdate(
-            this.#main_doc._id, 
+            this.main_doc._id, 
             {
                 $inc: {
                     'users.kyc_submitted': inc
@@ -127,7 +127,7 @@ module.exports = class MDB_REFERENCES extends MODEL
     async decrementKycSubmitted(dec = -1)
     {
         const res           = this.collection.findOneAndUpdate(
-            this.#main_doc._id, 
+            this.main_doc._id, 
             {
                 $inc: {
                     'users.kyc_submitted': dec
@@ -148,7 +148,7 @@ module.exports = class MDB_REFERENCES extends MODEL
     async incrementKycApproved(inc = 1)
     {
         const res           = this.collection.findOneAndUpdate(
-            this.#main_doc._id, 
+            this.main_doc._id, 
             {
                 $inc: {
                     'users.kyc_approved': inc
@@ -167,7 +167,7 @@ module.exports = class MDB_REFERENCES extends MODEL
     async decrementKycApproved(dec = -1)
     {
         const res           = this.collection.findOneAndUpdate(
-            this.#main_doc._id, 
+            this.main_doc._id, 
             {
                 $inc: {
                     'users.kyc_approved': dec
@@ -188,7 +188,7 @@ module.exports = class MDB_REFERENCES extends MODEL
     async incrementKycRejected(inc = 1)
     {
         const res           = this.collection.findOneAndUpdate(
-            this.#main_doc._id, 
+            this.main_doc._id, 
             {
                 $inc: {
                     'users.kyc_rejected': inc
@@ -207,7 +207,7 @@ module.exports = class MDB_REFERENCES extends MODEL
     async decrementKycRejected(dec = -1)
     {
         const res           = this.collection.findOneAndUpdate(
-            this.#main_doc._id, 
+            this.main_doc._id, 
             {
                 $inc: {
                     'users.kyc_rejected': dec
