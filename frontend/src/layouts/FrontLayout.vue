@@ -32,7 +32,7 @@
               :class="$q.dark.isActive ? 'text-white' : 'text-black'"
               style="font-weight: 400; cursor: pointer"
               @click="$router.push({ name: 'front_sell' })"
-              >Sell</a>
+              >Sell Product</a>
             </li>
             <li class="self-center">
               <a
